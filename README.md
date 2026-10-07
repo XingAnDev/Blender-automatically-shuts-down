@@ -34,13 +34,13 @@ Example:
 
 ```text
 Output folder: D:\Blender\Output
-Target file:   final_render.mp4
+Target file:   0999.png
 ```
 
 The tool will check:
 
 ```text
-D:\Blender\Output\final_render.mp4
+D:\Blender\Output\0999.png
 ```
 
 Once that file exists, it starts a 60-second shutdown timer.
@@ -52,7 +52,7 @@ You need the MSVC build tools, including `ml64.exe` and `link.exe`.
 Open **x64 Native Tools Command Prompt for VS**, then run:
 
 ```bat
-ml64 /c /nologo /Fo BlenderAutomation.obj BlenderAutomation.asm
+ml64 /c /nologo /Fo BlenderAutomation.obj BlenderAutomationEN.asm
 link /nologo /subsystem:console /entry:main /out:BlenderAutomation.exe BlenderAutomation.obj kernel32.lib shell32.lib
 ```
 
